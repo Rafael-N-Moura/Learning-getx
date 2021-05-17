@@ -29,10 +29,10 @@ class MyApp extends StatelessWidget {
 }
 
 class HomePage extends StatelessWidget {
-  var nome = "Bolo".obs;
+  var count = 0.obs;
 
   void increment() {
-    nome = "Jeremias" as RxString;
+    count++;
   }
 
   @override
@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
                     increment();
                   },
                   child: Text(
-                    '$nome',
+                    '$count',
                     style: TextStyle(fontSize: 50),
                   ),
                 ),
