@@ -29,10 +29,10 @@ class MyApp extends StatelessWidget {
 }
 
 class HomePage extends StatelessWidget {
-  var count = 0.obs;
+  var count = "Jeremias".obs;
 
   void increment() {
-    count++;
+    count.value = "Osório";
   }
 
   @override
